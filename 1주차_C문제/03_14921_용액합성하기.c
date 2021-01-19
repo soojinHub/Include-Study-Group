@@ -21,7 +21,6 @@ int main(void) {
 			min = abs(arr[left] + arr[right - 1]);
 			right--;
 			sign = 1;
-
 		}
 		if ((min >= abs(arr[left + 1] + arr[right])) && (left + 1 != right)) {
 			min = abs(arr[left + 1] + arr[right]);
