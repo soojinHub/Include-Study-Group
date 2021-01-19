@@ -7,7 +7,6 @@ int abs(int a) {
 int main(void) {
 	int num;
 	int arr[100000] = { 0, };
-
 	scanf("%d", &num);
 	for (int i = 0; i < num; i++) {
 		scanf("%d", &arr[i]);
