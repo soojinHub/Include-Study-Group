@@ -3,10 +3,10 @@
 
 int main(void) {
 
-	char input[255]; //Ã¹¹®ÀÚ + °ø¹é +250¹®ÀÚ + °³Çà¹®ÀÚ + \0
+	char input[254]; //ì²«ë¬¸ì + ê³µë°± + 250 ë¬¸ì + ê°œí–‰ë¬¸ì + null
 	int cnt;
 	while (1) {
-		fgets(input, 255, stdin);
+		fgets(input, 254, stdin); //fgets ëŠ” ê°œí–‰ë¬¸ìê¹Œì§€ ë°›ì•„ë“¤ì¸ë‹¤
 		cnt = 0;
 		if (input[0] != '#') {
 			for (int i = 2; i <= strlen(input); i++) {
