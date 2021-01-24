@@ -12,30 +12,14 @@ int main(void) {
 		scanf("%d", &arr[i]);
 	}
 
-	int left = 0; int right = num - 1;
-	int min = abs(arr[left] + arr[right]);
-	while (left < right) {
-		int sign = 0;
-		if ((min >= abs(arr[left] + arr[right - 1])) && (left != right - 1)) {
-			min = abs(arr[left] + arr[right - 1]);
-			right--;
-			sign = 1;
-		}
-		if ((min >= abs(arr[left + 1] + arr[right])) && (left + 1 != right)) {
-			min = abs(arr[left + 1] + arr[right]);
-			left++;
-			sign = 1;
-		}
-		if ((sign==0)&&(left + 1 != right-1)){
-			min = abs(arr[left + 1] + arr[right - 1]);
-			left++;
-			right--;
-			sign = -1;
-		}
-		int min = abs(arr[left] + arr[right]);
-		if (sign == 0)
-			break;
+	int l = 0; int r = num - 1;
+	int sum = arr[l] + arr[r];
+	while (1) {
+		if(arr[l]+arr[r]>0) r--;
+		else l++;
+		if(l>=r) break;
+		if (abs(sum)> abs(arr[l]+arr[r])) sum = arr[l]+arr[r];
 	}
-	printf("%d", min);
+	printf("%d", sum);
 	return 0;
 }
