@@ -1,3 +1,4 @@
+//정답
 #include <stdio.h> //printf, scanf
 #include <string.h> //strchr, strlen
 

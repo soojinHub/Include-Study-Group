@@ -1,3 +1,4 @@
+//오답 - 시간초과
 #include <stdio.h>
 #include <stdlib.h>
 
