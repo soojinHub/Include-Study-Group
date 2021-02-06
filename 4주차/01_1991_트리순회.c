@@ -1,3 +1,4 @@
+//정답
 #include <stdio.h>
 
 char arr[26][2]={'.',};
@@ -7,7 +8,6 @@ void inorder(char root);
 void postorder(char root);
 
 int main(void){
-    int n = 10;
     int num;
     char root, left, right;
     scanf("%d", &num);
